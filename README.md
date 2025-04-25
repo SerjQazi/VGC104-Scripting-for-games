@@ -1,2 +1,2 @@
-# tfs-VGC104
-Lab One
+# VGC104 - Scripting for Games
+Assignment One - HTML website, top 5 games!
