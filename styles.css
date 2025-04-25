@@ -1,0 +1,252 @@
+body {
+  background-color: gray;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  .subBody {
+    display: flex;
+  }
+}
+
+header {
+  color: white;
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.leftSide {
+  width: 50%;
+  height: 83vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftSide::-webkit-scrollbar {
+  display: none;
+}
+
+.rightSide {
+  width: 50%;
+  height: 83vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  flex-direction: column;
+  li {
+    border: 1px solid white;
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 40px;
+      padding: 16px 32px;
+      border: 1px solid white;
+    }
+  }
+}
+.rightSide::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  color: white;
+  text-align: left;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.topFiveGames {
+  color: white;
+  text-align: center;
+  padding: 0;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.allTimeFavGames {
+  color: white;
+  text-align: center;
+
+  list-style: none;
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 0 0 10px 0;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.1;
+      transition: all 0.3s ease;
+    }
+  }
+}
+.imgContainer {
+  width: 15vw; /* Responsive width */
+  max-width: 180px; /* Don't let it get too big */
+  min-width: 80px; /* Optional: don’t let it get too small */
+  height: auto;
+  color: white;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  p {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 0 0 10px 0;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+    transition: all 0.3s ease;
+  }
+}
+
+.platforms {
+  font-size: 17px;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  color: white;
+  h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    align-items: start;
+    height: auto;
+    border: none;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subBody {
+    flex-direction: column;
+  }
+  .leftSide {
+    width: 100%;
+    height: 30vh;
+    overflow-x: auto;
+    scrollbar-width: none;
+    flex-direction: row;
+    ul {
+      border: 1px solid white;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    li {
+      h2 {
+        font-size: 14px;
+      }
+    }
+  }
+  .rightSide {
+    width: 100%;
+    height: 54vh;
+    li {
+      justify-content: flex-start;
+      height: auto;
+    }
+    li h2 {
+      font-size: 22px;
+    }
+    li p {
+      font-size: 20px;
+    }
+  }
+  ol {
+    border: 1px solid white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+  }
+
+  li {
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+
